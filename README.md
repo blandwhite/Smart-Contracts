@@ -25,32 +25,25 @@ To automate the creation of joint savings accounts, we’ll create a Solidity sm
 
 ## Technologies
 
-This application is written in Python 3.7 using Jupyter Lab v3.0.14
-
- - [Streamlit](https://streamlit.io/) - *an open source library that turns data scripts into shareable web apps in minutes.*
- - [Web3.py v5.17](https://web3py.readthedocs.io/en/stable/) - *a Python library for interacting with Ethereum.*
- - [Ganache](https://trufflesuite.com/ganache/) - *a program that allows you to quickly set up a local blockchain, which you can use to test and develop smart contracts.*
- - [mnemonic](https://pypi.org/project/mnemonic/) - *implementation of BIP-0039: Mnemonic code for generating deterministic keys*
- - [bip44](https://pypi.org/project/bip44/) - *simple Python bip44 implementation. Mnemonic + bip32.*
- - [python-dotenv](https://pypi.org/project/python-dotenv/) - *a Python library that reads key-value pairs from a .env file and can set them as environment variables.*
- - [Requests](https://docs.python-requests.org/en/latest/) - *an elegant and simple HTTP library for Python, built for human beings.*
-
-### Installation Guide
-
-prior to running these libraries, install them from the command line:
- 
-  - streamlit: `pip install streamlit`
-  - web3: `pip install web3`
-  - eth-tester: `pip install eth-tester==0.5.0b3`
-  - mnemonic: `pip install mnemonic`
-  - bip44: `pip install bip44`
-  - python-dotenv: `pip install python-dotenv`
-  - Requests: `python -m pip install requests`
+This application is written in Solidity with [Remix 0.22.2 IDE](https://remix-ide.readthedocs.io/en/latest/index.html)
   
 ---
 
 ## Usage
 
+Here are some examples of successful execution of the JointSavings contract. More screenshots are located in the [`Execution_Results`](Execution_Results) folder above.
+
+##### 1. The `JointSavings` accountholders' addresses are set:
+![](Execution_Results/1_setAccounts_input.png)
+
+##### 2. Our first deposit to the contract:
+![](Execution_Results/2_contractBalance_1.png)
+
+##### 3. Withdrawal of 10 ether from the contract to `accountTwo`:
+![](Execution_Results/3_withdraw_contractBalance_2.png)
+
+##### 4. Example of transaction confirmation:
+![](Execution_Results/3_withdraw_accountTwo.png)
 
 
 ---
